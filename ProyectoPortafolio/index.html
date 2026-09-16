@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carolina Paredes | Desarrolladora Full-Stack Java</title>
+  
+  <!-- CDN Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons de Bootstrap & DevIcons (para iconos de Java, Spring, MySQL) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+  <style>
+    /* Estilos personalizados sobre Bootstrap */
+    body {
+      background-color: #0b0f19;
+      color: #e2e8f0;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    /* Fondo Hero */
+    .hero-banner {
+      background: radial-gradient(circle at top right, #1e293b, #0b0f19 70%);
+      padding: 90px 0 70px 0;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    /* Destacados Java */
+    .text-java {
+      color: #f97316; /* Color Naranja Java */
+    }
+
+    .text-cyan {
+      color: #38bdf8;
+    }
+
+    .badge-java {
+      background-color: rgba(249, 115, 22, 0.15);
+      color: #fb923c;
+      border: 1px solid rgba(249, 115, 22, 0.3);
+    }
+
+    .badge-spring {
+      background-color: rgba(34, 197, 94, 0.15);
+      color: #4ade80;
+      border: 1px solid rgba(34, 197, 94, 0.3);
+    }
+
+    .badge-db {
+      background-color: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+
+    /* Tarjetas de Proyectos Bootstrap */
+    .card-project {
+      background-color: #151e2e;
+      border: 1px solid #243248;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .card-project:hover {
+      transform: translateY(-8px);
+      border-color: #f97316;
+      box-shadow: 0 10px 25px rgba(249, 115, 22, 0.15);
+    }
+
+    .avatar-frame {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 4px solid #f97316;
+      box-shadow: 0 0 25px rgba(249, 115, 22, 0.3);
+      object-fit: cover;
+    }
+
+    /* Botones temáticos */
+    .btn-java {
+      background-color: #ea580c;
+      color: #ffffff;
+      font-weight: 600;
+      border: none;
+    }
+
+    .btn-java:hover {
+      background-color: #c2410c;
+      color: #ffffff;
+    }
+
+    /* Modificador de secciones */
+    .section-alt {
+      background-color: #111827;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de Navegación Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-secondary">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="#">
+        <i class="devicon-java-plain text-java me-2"></i>Carolina<span class="text-java">.dev</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto fw-medium">
+          <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Tecnologías</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos Java</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECCIÓN HERO / INICIO -->
+    <section id="inicio" class="hero-banner">
+      <div class="container">
+        <div class="row align-items-center flex-column-reverse flex-lg-row g-5">
+          
+          <div class="col-lg-7 text-center text-lg-start">
+            <span class="badge bg-dark text-java border border-warning px-3 py-2 mb-3">
+              <i class="bi bi-code-slash me-1"></i> Java Backend & Full-Stack Developer
+            </span>
+            <h1 class="display-4 fw-bold mb-3">
+              Hola, soy <span class="text-cyan">Carolina Paredes</span>
+            </h1>
+            <h2 class="h4 text-secondary mb-4">
+              Desarrolladora de aplicaciones para pequeña y grande empresa con <span class="text-java fw-bold">Java</span>, <span class="text-success fw-bold">Spring Boot</span> y <span class="text-cyan fw-bold">MySQL</span>.
+            </h2>
+            <p class="lead text-light-50 mb-4" style="color: #94a3b8;">
+              Apasionada por la creación de arquitecturas sólidas, API REST escalables, código limpio y pruebas unitarias automatizadas.
+            </p>
+            
+            <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+              <a href="#proyectos" class="btn btn-java btn-lg px-4"><i class="bi bi-rocket-takeoff me-2"></i>Ver Proyectos</a>
+              <a href="#contacto" class="btn btn-outline-light btn-lg px-4"><i class="bi bi-envelope me-2"></i>Contacto</a>
+            </div>
+          </div>
+        <div class="col-lg-5 text-center">
+      <div class="position-relative d-inline-block">
+        <img src="foto-perfil.png" 
+         class="avatar-frame" 
+         style="width: 280px; height: 280px; object-fit: cover;" 
+         alt="Carolina Paredes">
+        </div>
+        </div>  
+      </section>
+
+    <!-- SECCIÓN TECNOLOGÍAS JAVA & BACKEND -->
+    <section id="skills" class="py-5 section-alt border-bottom border-secondary">
+      <div class="container text-center">
+        <h3 class="h5 text-uppercase text-java fw-bold tracking-wider mb-4">Stack Tecnológico Principal</h3>
+        <div class="d-flex flex-wrap justify-content-center gap-4 fs-1">
+          <div class="p-3 bg-dark rounded border border-secondary" title="Java"><i class="devicon-java-plain colored"></i></div>
+          <div class="p-3 bg-dark rounded border border-secondary" title="Spring Boot"><i class="devicon-spring-plain colored"></i></div>
+          <div class="p-3 bg-dark rounded border border-secondary" title="MySQL"><i class="devicon-mysql-plain colored"></i></div>
+          <div class="p-3 bg-dark rounded border border-secondary" title="Bootstrap"><i class="devicon-bootstrap-plain colored"></i></div>
+          <div class="p-3 bg-dark rounded border border-secondary" title="JavaScript"><i class="devicon-javascript-plain colored"></i></div>
+          <div class="p-3 bg-dark rounded border border-secondary" title="Git & GitHub"><i class="devicon-git-plain colored"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE MÍ -->
+    <section id="sobre-mi" class="py-5">
+      <div class="container py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2 class="fw-bold mb-4 text-cyan">Sobre Mí</h2>
+            <p class="fs-5 text-light mb-3">
+              Apasionada por el desarrollo software backend y frontend, enfocada en resolver problemas complejos con código eficiente e intuitivo.
+            </p>
+            <p class="text-secondary">
+              Cuento con experiencia en el diseño de modelos relacionales avanzadas en MySQL, construcción de servicios web e integración de patrones de diseño utilizando <strong>Java, Spring Boot, Spring Security, Servlets, JSP y Bootstrap</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN PROYECTOS -->
+    <section id="proyectos" class="py-5 section-alt border-top border-secondary">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold text-java">Proyectos Destacados</h2>
+          <p class="text-secondary">Sistemas y aplicaciones web desarrollados con arquitectura Java</p>
+        </div>
+
+        <div class="row g-4">
+          
+      <div class="row g-4">
+          
+          <!-- Proyecto 1: SmartTask -->
+          <div class="col-md-6 col-lg-6">
+            <div class="card card-project h-100 p-3">
+              <div class="card-img-container mb-3 text-center overflow-hidden rounded" style="max-height: 180px;">
+                <!-- Cambia 'assets/img/smart-task.png' por tu ruta local si la tienes -->
+                <img src="assets/img/smart-task.png" 
+                     onerror="this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&auto=format&fit=crop&q=80'" 
+                     class="img-fluid rounded" alt="SmartTask Java">
+              </div>
+              <div class="card-body d-flex flex-column p-0">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h3 class="h4 fw-bold text-light m-0">SmartTask</h3>
+                  <span class="badge badge-java px-2 py-1">Java Core</span>
+                </div>
+                <p class="text-secondary small mb-3">Aplicación Backend / Arquitectura POO</p>
+                <p class="card-text text-light-50 mb-4">
+                  Sistema de gestión de tareas desarrollado en Java con pruebas unitarias en JUnit 5, patrones orientados a objetos y documentación Javadoc.
+                </p>
+                <div class="mb-4">
+                  <span class="badge badge-java me-1">Java 17</span>
+                  <span class="badge badge-java me-1">JUnit 5</span>
+                  <span class="badge badge-java me-1">Maven</span>
+                </div>
+                <div class="mt-auto d-flex gap-2">
+                  <a href="#" class="btn btn-sm btn-outline-light w-50"><i class="bi bi-github me-1"></i> Código</a>
+                  <a href="assets/img/smart-task.png" target="_blank" class="btn btn-sm btn-java w-50"><i class="bi bi-image me-1"></i> Ver Imagen</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 2: AppEstudiantil -->
+          <div class="col-md-6 col-lg-6">
+            <div class="card card-project h-100 p-3">
+              <div class="card-img-container mb-3 text-center overflow-hidden rounded" style="max-height: 180px;">
+                <img src="assets/img/app-estudiantil.png" 
+                     onerror="this.src='https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&auto=format&fit=crop&q=80'" 
+                     class="img-fluid rounded" alt="AppEstudiantil Spring">
+              </div>
+              <div class="card-body d-flex flex-column p-0">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h3 class="h4 fw-bold text-light m-0">AppEstudiantil</h3>
+                  <span class="badge badge-spring px-2 py-1">Spring Boot</span>
+                </div>
+                <p class="text-secondary small mb-3">Plataforma Full-Stack / Arquitectura MVC</p>
+                <p class="card-text text-light-50 mb-4">
+                  Sistema web para el control de matrícula y asignaturas estudiantiles desarrollado con Spring Boot, JPA/Hibernate y Thymeleaf.
+                </p>
+                <div class="mb-4">
+                  <span class="badge badge-spring me-1">Spring Boot</span>
+                  <span class="badge badge-db me-1">MySQL</span>
+                  <span class="badge badge-java me-1">Thymeleaf</span>
+                </div>
+                <div class="mt-auto d-flex gap-2">
+                  <a href="#" class="btn btn-sm btn-outline-light w-50"><i class="bi bi-github me-1"></i> Código</a>
+                  <a href="assets/img/app-estudiantil.png" target="_blank" class="btn btn-sm btn-java w-50"><i class="bi bi-image me-1"></i> Ver Imagen</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 3: Biblioteca Digital UNTEC -->
+          <div class="col-md-6 col-lg-6">
+            <div class="card card-project h-100 p-3">
+              <div class="card-img-container mb-3 text-center overflow-hidden rounded" style="max-height: 180px;">
+                <img src="assets/img/biblioteca.png" 
+                     onerror="this.src='https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=600&auto=format&fit=crop&q=80'" 
+                     class="img-fluid rounded" alt="Biblioteca UNTEC">
+              </div>
+              <div class="card-body d-flex flex-column p-0">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h3 class="h4 fw-bold text-light m-0">Biblioteca Digital UNTEC</h3>
+                  <span class="badge badge-java px-2 py-1">Java Web</span>
+                </div>
+                <p class="text-secondary small mb-3">Sistema de Inventario & Autenticación</p>
+                <p class="card-text text-light-50 mb-4">
+                  Aplicación Java Web desplegada con Servlets, JSP y Spring Security para control de acceso por roles e inventario bibliográfico.
+                </p>
+                <div class="mb-4">
+                  <span class="badge badge-java me-1">Servlets & JSP</span>
+                  <span class="badge badge-spring me-1">Spring Security</span>
+                  <span class="badge badge-db me-1">MySQL</span>
+                </div>
+                <div class="mt-auto d-flex gap-2">
+                  <a href="#" class="btn btn-sm btn-outline-light w-50"><i class="bi bi-github me-1"></i> Código</a>
+                  <a href="assets/img/biblioteca.png" target="_blank" class="btn btn-sm btn-java w-50"><i class="bi bi-image me-1"></i> Ver Imagen</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Proyecto 4: Alke Wallet -->
+          <div class="col-md-6 col-lg-6">
+            <div class="card card-project h-100 p-3">
+              <div class="card-img-container mb-3 text-center overflow-hidden rounded" style="max-height: 180px;">
+                <img src="assets/img/alke-wallet.png" 
+                     onerror="this.src='https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&auto=format&fit=crop&q=80'" 
+                     class="img-fluid rounded" alt="Alke Wallet EER">
+              </div>
+              <div class="card-body d-flex flex-column p-0">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h3 class="h4 fw-bold text-light m-0">Alke Wallet</h3>
+                  <span class="badge badge-db px-2 py-1">Base de Datos</span>
+                </div>
+                <p class="text-secondary small mb-3">Modelado Financiero EER</p>
+                <p class="card-text text-light-50 mb-4">
+                  Diseño de base de datos relacional para billetera virtual, optimización de consultas SQL y mockup interactivo con Bootstrap.
+                </p>
+                <div class="mb-4">
+                  <span class="badge badge-db me-1">MySQL</span>
+                  <span class="badge badge-db me-1">Diagrama EER</span>
+                  <span class="badge me-1" style="background:#312e81; color:#a5b4fc;">Bootstrap 5</span>
+                </div>
+                <div class="mt-auto d-flex gap-2">
+                  <a href="#" class="btn btn-sm btn-outline-light w-50"><i class="bi bi-github me-1"></i> Código</a>
+                  <a href="assets/img/alke-wallet.png" target="_blank" class="btn btn-sm btn-java w-50"><i class="bi bi-image me-1"></i> Ver Imagen</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>    
+      </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="py-5 text-center">
+      <div class="container py-4">
+        <h2 class="fw-bold mb-3 text-cyan">¿Construimos un proyecto juntos?</h2>
+        <p class="lead text-secondary mb-4">Estoy disponible para oportunidades como Desarrolladora Java / Full-Stack.</p>
+        <a href="mailto:carolina@ejemplo.com" class="btn btn-java btn-lg px-5"><i class="bi bi-send-fill me-2"></i>Enviar un correo</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="py-3 bg-dark text-center text-secondary border-top border-secondary small">
+    <div class="container">
+      Desarrollado por <strong>Carolina Paredes</strong> &bull; Java & Bootstrap 5
+    </div>
+  </footer>
+
+  <!-- JS Bootstrap 5 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
+</body>
+</html>
